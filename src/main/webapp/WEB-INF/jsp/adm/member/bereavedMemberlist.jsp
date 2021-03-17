@@ -37,10 +37,11 @@ button {
 			<th class="px-4 py-3">지역</th>
 			<th class="px-4 py-3">기타</th>
 		</tr>
+		
 		<c:forEach items="${bMemberList}" var="bMember"> 
 		<tr class="bg-gray-100 border-b border-gray-200">
 		
-			<td onClick="location.href='detail?id=${bMember.getId()}'" style="cursor:pointer;" class="px-4 py-3 hover:underline">${bMember.getId()}</td>
+			<td onClick="location.href='detail?memberId=${bMember.getId()}'" style="cursor:pointer;" class="px-4 py-3 hover:underline">${bMember.getId()}</td>
 			<td class="px-4 py-3">${bMember.getMemberName()}</td>
 			<td class="px-4 py-3">${bMember.getRegDate()}</td>
 			<td class="px-4 py-3">${bMember.getMemberContactNum()}</td>

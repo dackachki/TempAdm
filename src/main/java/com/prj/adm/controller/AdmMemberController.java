@@ -25,8 +25,8 @@ public class AdmMemberController {
 
 	@RequestMapping("/adm/member/bereavedMemberlist")
 	public String showbereavedMemberlist(HttpServletRequest req) {
-		int i = 1;
-		List<Member> bereavedMemberList = admMemberService.getbereavedMemberList();
+		
+		List<Member> bereavedMemberList = admMemberService.getMemberListByKind(0);
 		
 		req.setAttribute("bMemberList", bereavedMemberList);
 		return "adm/member/bereavedMemberlist";
@@ -34,6 +34,8 @@ public class AdmMemberController {
 	
 	@RequestMapping("/adm/member/clientMemberlist")
 	public String showclientMemberlist() {
+		
+		
 		return "adm/member/clientMemberlist";
 	}
 	

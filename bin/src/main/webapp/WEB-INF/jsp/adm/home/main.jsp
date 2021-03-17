@@ -5,9 +5,8 @@
 <style>
 button {
 	margin-top: 20%;
-	padding:10px;
+	padding: 10px;
 }
-
 </style>
 
 <section class="section-1">
@@ -16,24 +15,24 @@ button {
 			<li class="">
 				<button
 					class="bg-gray-500 hover:bg-black hover:text-white text-white font-bold w-60 rounded-full"
-					onclick="location.href = '../member/bereavedMemberlist' ">유가족 관리</button>
+					onclick="location.href = '../firstBranch/bereavedMemberMenu' ">유가족
+					관리</button>
 
 			</li>
 			<li class="">
 				<button
 					class="bg-gray-500 hover:bg-black hover:text-white text-white font-bold w-60 rounded-full"
-					onclick="location.href = '../member/bereavedMemberlist' ">의뢰인 관리</button>
+					onclick="location.href = '../firstBranch/clientMemberMenu' ">의뢰인
+					관리</button>
 
 			</li>
 			<li>
 				<button
-					class="bg-gray-500 hover:bg-black hover:text-white text-white font-bold w-60 rounded-full">
-					전문가 관리</button>
+					class="bg-gray-500 hover:bg-black hover:text-white text-white font-bold w-60 rounded-full"
+					onclick="location.href='../firstBranch/expertMemberMenu'">전문가 관리</button>
 			</li>
 			<li>
-				<button
-					class="bg-gray-500 hover:bg-black hover:text-white   text-white font-bold w-60 rounded-full">
-					개발자 메뉴</button>
+				<button class="bg-gray-500 hover:bg-black hover:text-white text-white font-bold w-60 rounded-full" onclick="location.href='../firstBranch/devMenu'">개발자 메뉴</button>
 			</li>
 		</ul>
 	</div>

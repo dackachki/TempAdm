@@ -12,7 +12,7 @@ public interface AdmMemberDao {
 
 	Member getMemberById(@Param("id") int id);
 
-	List<Member> getMemberListByKind(@Param("memberKind") int i);
+	List<Member> getMemberListByKind(@Param("i") int i);
 
 	List<Member> getbereavedMemberList();
 
